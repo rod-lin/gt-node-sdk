@@ -42,7 +42,7 @@ var captcha = new Geetest({
 
 ## register(callback)
 ```js
-captcha.register(function (data) {
+captcha.register(function (err, data) {
     // data为一个对象，里面包含challenge和success字段
     // 正常模式下challenge为32为，success为1
     // failback模式下challenge为34为，success为0
